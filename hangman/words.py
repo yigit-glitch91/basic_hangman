@@ -1,17 +1,17 @@
 city_list = [
-    "londra",
+    "london",
     "paris",
     "tokyo",
     "dubai",
-    "roma",
-    "seul",
-    "köln",
+    "rome",
+    "seoul",
+    "detroit",
     "berlin",
-    "zahire",
     "madrid",
-    "viyana",
+    "inter",
     "amsterdam",
     "bangkok",
-    "moskova",
+    "moscow",
     "istanbul"
+
 ]
