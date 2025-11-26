@@ -8,7 +8,7 @@ game_over= False
 lives = 6
 print('''
       
-ŞEHİR BİLMECE OYUNUNA HOŞGELDİN...''')
+WELCOME TO GUESS THE CİTY GAME WİTH HANGMAN...''')
 word_length=len(word)
 for position in range(word_length):
     placeholder += "_"
@@ -18,7 +18,7 @@ print(placeholder)
 
 while not game_over:
     
-    guess=input("Bir harf tahmin et: ").lower()
+    guess=input("GUESS A LETTER: ").lower()
     display=""
 
     for letter in word:
@@ -36,14 +36,14 @@ while not game_over:
         lives -= 1
         if lives == 0:
             game_over = True
-            print("Kaybettin")
+            print("LOSE! :D HİHİHİHAHA")
             print(word)
     
 
 
     if "_" not in display:
         game_over = True
-        print("Kazandın! Ve hala " + str(lives - 1) + " canın vardı...")
+        print("YOU WİN! AND YOU STILL HAVE " + str(lives - 1) + " LIVES...")
     
 
     if ("_" in display):
@@ -54,4 +54,5 @@ while not game_over:
         print(word)
 
     
+
     print(hangman_art.HANGMANPICS[lives])
